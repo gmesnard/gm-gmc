@@ -1,0 +1,859 @@
+/* ==========================================================================
+   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
+   ========================================================================== */
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==============
+    FONTS
+   ============== */
+@font-face {
+    font-family: 'kaffeesatz';
+    src: url('../fonts/yanonekaffeesatz-light-webfont.eot');
+    src: url('../fonts/yanonekaffeesatz-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/yanonekaffeesatz-light-webfont.woff') format('woff'),
+         url('../fonts/yanonekaffeesatz-light-webfont.ttf') format('truetype'),
+         url('../fonts/yanonekaffeesatz-light-webfont.svg#kaffeesatzlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'museo';
+    src: url('../fonts/museo300-regular-webfont.eot');
+    src: url('../fonts/museo300-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/museo300-regular-webfont.woff') format('woff'),
+         url('../fonts/museo300-regular-webfont.ttf') format('truetype'),
+         url('../fonts/museo300-regular-webfont.svg#../fonts/museo300') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* ===== Initializr Styles ==================================================
+   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+   ========================================================================== */
+body {
+    /** To edit this background, follow this link:
+    http://svgeneration.com/generate/GPlay?height=6&width=6&background=e3e3e3&overlay=ffffff&weight=15&padding=0.2&
+    */
+    background-color: #e3e3e3;background-image:url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rJyB3aWR0aD0nMzcyJyBoZWlnaHQ9JzE5Mi4wMDAwMDAwMDAwMDAwMycgdmlld0JveD0nMCAwIDc0LjQgMzguNDAwMDAwMDAwMDAwMDA2Jz4KCTxkZWZzPgoJCTxwYXRoIGlkPSdzJyBmaWxsPScjZmZmZmZmJyBkPSdNMCwwbDYgM2wtNiwzeicvPgoJPC9kZWZzPgoJPGcgaWQ9J2InPgoJPHVzZSB4PSctNicgeT0nLTMnIHRyYW5zZm9ybT0nbWF0cml4KC0xIDAgMCAxIDAgMCknIGZpbGwtb3BhY2l0eT0nMC4zJyB4bGluazpocmVmPScjcycgLz4KCTx1c2UgeD0nMCcgeT0nMC4yJyBmaWxsLW9wYWNpdHk9JzAuNDQ5OTk5OTk5OTk5OTk5OTYnIHhsaW5rOmhyZWY9JyNzJyAvPgoJPHVzZSB4PSctNicgeT0nMy40MDAwMDAwMDAwMDAwMDA0JyB0cmFuc2Zvcm09J21hdHJpeCgtMSAwIDAgMSAwIDApJyBmaWxsLW9wYWNpdHk9JzAuNDQ5OTk5OTk5OTk5OTk5OTYnIHhsaW5rOmhyZWY9JyNzJyAvPgoJPHVzZSB4PScwJyB5PSc2LjYwMDAwMDAwMDAwMDAwMDUnIGZpbGwtb3BhY2l0eT0nMC40NDk5OTk5OTk5OTk5OTk5NicgeGxpbms6aHJlZj0nI3MnIC8+Cgk8dXNlIHg9Jy02JyB5PSc5LjgnIHRyYW5zZm9ybT0nbWF0cml4KC0xIDAgMCAxIDAgMCknIGZpbGwtb3BhY2l0eT0nMC42JyB4bGluazpocmVmPScjcycgLz4KCTx1c2UgeD0nMCcgeT0nMTMnIGZpbGwtb3BhY2l0eT0nMC4zJyB4bGluazpocmVmPScjcycgLz4KCTx1c2UgeD0nLTYnIHk9JzE2LjInIHRyYW5zZm9ybT0nbWF0cml4KC0xIDAgMCAxIDAgMCknIGZpbGwtb3BhY2l0eT0nMC4zJyB4bGluazpocmVmPScjcycgLz4KCTx1c2UgeD0nNi4yJyB5PSctMycgZmlsbC1vcGFjaXR5PScwLjQ0OTk5OTk5OTk5OTk5OTk2JyB4bGluazpocmVmPScjcycgLz4KCTx1c2UgeD0nLTEyLjIwMDAwMDAwMDAwMDAwMScgeT0nMC4yJyB0cmFuc2Zvcm09J21hdHJpeCgtMSAwIDAgMSAwIDApJyBmaWxsLW9wYWNpdHk9JzAuNicgeGxpbms6aHJlZj0nI3MnIC8+Cgk8dXNlIHg9JzYuMicgeT0nMy40MDAwMDAwMDAwMDAwMDA0JyBmaWxsLW9wYWNpdHk9JzAuNDQ5OTk5OTk5OTk5OTk5OTYnIHhsaW5rOmhyZWY9JyNzJyAvPgoJPHVzZSB4PSctMTIuMjAwMDAwMDAwMDAwMDAxJyB5PSc2LjYwMDAwMDAwMDAwMDAwMDUnIHRyYW5zZm9ybT0nbWF0cml4KC0xIDAgMCAxIDAgMCknIGZpbGwtb3BhY2l0eT0nMC4zJyB4bGluazpocmVmPScjcycgLz4KCTx1c2UgeD0nNi4yJyB5PSc5LjgnIGZpbGwtb3BhY2l0eT0nMC4xNScgeGxpbms6aHJlZj0nI3MnIC8+Cgk8dXNlIHg9Jy0xMi4yMDAwMDAwMDAwMDAwMDEnIHk9JzEzJyB0cmFuc2Zvcm09J21hdHJpeCgtMSAwIDAgMSAwIDApJyBmaWxsLW9wYWNpdHk9JzAuMycgeGxpbms6aHJlZj0nI3MnIC8+Cgk8dXNlIHg9JzYuMicgeT0nMTYuMicgZmlsbC1vcGFjaXR5PScwLjQ0OTk5OTk5OTk5OTk5OTk2JyB4bGluazpocmVmPScjcycgLz4KCTx1c2UgeD0nLTE4LjQwMDAwMDAwMDAwMDAwMicgeT0nLTMnIHRyYW5zZm9ybT0nbWF0cml4KC0xIDAgMCAxIDAgMCknIGZpbGwtb3BhY2l0eT0nMC4zJyB4bGluazpocmVmPScjcycgLz4KCTx1c2UgeD0nMTIuNCcgeT0nMC4yJyBmaWxsLW9wYWNpdHk9JzAuMycgeGxpbms6aHJlZj0nI3MnIC8+Cgk8dXNlIHg9Jy0xOC40MDAwMDAwMDAwMDAwMDInIHk9JzMuNDAwMDAwMDAwMDAwMDAwNCcgdHJhbnNmb3JtPSdtYXRyaXgoLTEgMCAwIDEgMCAwKScgZmlsbC1vcGFjaXR5PScwLjQ0OTk5OTk5OTk5OTk5OTk2JyB4bGluazpocmVmPScjcycgLz4KCTx1c2UgeD0nMTIuNCcgeT0nNi42MDAwMDAwMDAwMDAwMDA1JyBmaWxsLW9wYWNpdHk9JzAuMycgeGxpbms6aHJlZj0nI3MnIC8+Cgk8dXNlIHg9Jy0xOC40MDAwMDAwMDAwMDAwMDInIHk9JzkuOCcgdHJhbnNmb3JtPSdtYXRyaXgoLTEgMCAwIDEgMCAwKScgZmlsbC1vcGFjaXR5PScwLjE1JyB4bGluazpocmVmPScjcycgLz4JCgk8dXNlIHg9JzEyLjQnIHk9JzEzJyBmaWxsLW9wYWNpdHk9JzAuMycgeGxpbms6aHJlZj0nI3MnIC8+Cgk8dXNlIHg9Jy0xOC40MDAwMDAwMDAwMDAwMDInIHk9JzE2LjInIHRyYW5zZm9ybT0nbWF0cml4KC0xIDAgMCAxIDAgMCknIGZpbGwtb3BhY2l0eT0nMC4zJyB4bGluazpocmVmPScjcycgLz4KCTx1c2UgeD0nMTguNicgeT0nLTMnIGZpbGwtb3BhY2l0eT0nMC4zJyB4bGluazpocmVmPScjcycgLz4KCTx1c2UgeD0nLTI0LjYnIHk9JzAuMicgdHJhbnNmb3JtPSdtYXRyaXgoLTEgMCAwIDEgMCAwKScgZmlsbC1vcGFjaXR5PScwLjMnIHhsaW5rOmhyZWY9JyNzJyAvPgoJPHVzZSB4PScxOC42JyB5PSczLjQwMDAwMDAwMDAwMDAwMDQnIGZpbGwtb3BhY2l0eT0nMC4xNScgeGxpbms6aHJlZj0nI3MnIC8+Cgk8dXNlIHg9Jy0yNC42JyB5PSc2LjYwMDAwMDAwMDAwMDAwMDUnIHRyYW5zZm9ybT0nbWF0cml4KC0xIDAgMCAxIDAgMCknIGZpbGwtb3BhY2l0eT0nMC40NDk5OTk5OTk5OTk5OTk5NicgeGxpbms6aHJlZj0nI3MnIC8+Cgk8dXNlIHg9JzE4LjYnIHk9JzkuOCcgZmlsbC1vcGFjaXR5PScwLjQ0OTk5OTk5OTk5OTk5OTk2JyB4bGluazpocmVmPScjcycgLz4KCTx1c2UgeD0nLTI0LjYnIHk9JzEzJyB0cmFuc2Zvcm09J21hdHJpeCgtMSAwIDAgMSAwIDApJyBmaWxsLW9wYWNpdHk9JzAuMTUnIHhsaW5rOmhyZWY9JyNzJyAvPgoJPHVzZSB4PScxOC42JyB5PScxNi4yJyBmaWxsLW9wYWNpdHk9JzAuMycgeGxpbms6aHJlZj0nI3MnIC8+Cgk8dXNlIHg9Jy0zMC44JyB5PSctMycgdHJhbnNmb3JtPSdtYXRyaXgoLTEgMCAwIDEgMCAwKScgZmlsbC1vcGFjaXR5PScwLjQ0OTk5OTk5OTk5OTk5OTk2JyB4bGluazpocmVmPScjcycgLz4JCgk8dXNlIHg9JzI0LjgnIHk9JzAuMicgZmlsbC1vcGFjaXR5PScwLjYnIHhsaW5rOmhyZWY9JyNzJyAvPgoJPHVzZSB4PSctMzAuOCcgeT0nMy40MDAwMDAwMDAwMDAwMDA0JyB0cmFuc2Zvcm09J21hdHJpeCgtMSAwIDAgMSAwIDApJyBmaWxsLW9wYWNpdHk9JzAuMTUnIHhsaW5rOmhyZWY9JyNzJyAvPgoJPHVzZSB4PScyNC44JyB5PSc2LjYwMDAwMDAwMDAwMDAwMDUnIGZpbGwtb3BhY2l0eT0nMC4zJyB4bGluazpocmVmPScjcycgLz4KCTx1c2UgeD0nLTMwLjgnIHk9JzkuOCcgdHJhbnNmb3JtPSdtYXRyaXgoLTEgMCAwIDEgMCAwKScgZmlsbC1vcGFjaXR5PScwLjQ0OTk5OTk5OTk5OTk5OTk2JyB4bGluazpocmVmPScjcycgLz4KCTx1c2UgeD0nMjQuOCcgeT0nMTMnIGZpbGwtb3BhY2l0eT0nMC4xNScgeGxpbms6aHJlZj0nI3MnIC8+Cgk8dXNlIHg9Jy0zMC44JyB5PScxNi4yJyB0cmFuc2Zvcm09J21hdHJpeCgtMSAwIDAgMSAwIDApJyBmaWxsLW9wYWNpdHk9JzAuNDQ5OTk5OTk5OTk5OTk5OTYnIHhsaW5rOmhyZWY9JyNzJyAvPgoJPHVzZSB4PSczMScgeT0nLTMnIGZpbGwtb3BhY2l0eT0nMC4zJyB4bGluazpocmVmPScjcycgLz4KCTx1c2UgeD0nLTM3JyB5PScwLjInIHRyYW5zZm9ybT0nbWF0cml4KC0xIDAgMCAxIDAgMCknIGZpbGwtb3BhY2l0eT0nMC4zJyB4bGluazpocmVmPScjcycgLz4JCgk8dXNlIHg9JzMxJyB5PSczLjQwMDAwMDAwMDAwMDAwMDQnIGZpbGwtb3BhY2l0eT0nMC42JyB4bGluazpocmVmPScjcycgLz4KCTx1c2UgeD0nLTM3JyB5PSc2LjYwMDAwMDAwMDAwMDAwMDUnIHRyYW5zZm9ybT0nbWF0cml4KC0xIDAgMCAxIDAgMCknIGZpbGwtb3BhY2l0eT0nMC4zJyB4bGluazpocmVmPScjcycgLz4JCgk8dXNlIHg9JzMxJyB5PSc5LjgnIGZpbGwtb3BhY2l0eT0nMC40NDk5OTk5OTk5OTk5OTk5NicgeGxpbms6aHJlZj0nI3MnIC8+Cgk8dXNlIHg9Jy0zNycgeT0nMTMnIHRyYW5zZm9ybT0nbWF0cml4KC0xIDAgMCAxIDAgMCknIGZpbGwtb3BhY2l0eT0nMC4zJyB4bGluazpocmVmPScjcycgLz4KCTx1c2UgeD0nMzEnIHk9JzE2LjInIGZpbGwtb3BhY2l0eT0nMC4zJyB4bGluazpocmVmPScjcycgLz4KCTwvZz4KCTx1c2UgeD0nLTM3JyB5PScxOS4yMDAwMDAwMDAwMDAwMDMnIHRyYW5zZm9ybT0nbWF0cml4KC0xIDAgMCAxIDAgMCknIHhsaW5rOmhyZWY9JyNiJyAvPgoJPHVzZSB4PSctNzQuMicgeT0nLTEyLjgnIHRyYW5zZm9ybT0nbWF0cml4KC0xIDAgMCAtMSAwIDApJyB4bGluazpocmVmPScjYicgLz4KCTx1c2UgeD0nMzcuMicgeT0nLTI1LjYnIHRyYW5zZm9ybT0nbWF0cml4KDEgMCAwIC0xIDAgMCknIHhsaW5rOmhyZWY9JyNiJyAvPgoJPHVzZSB4PSczNy4yJyB5PSctNDQuODAwMDAwMDAwMDAwMDA0JyB0cmFuc2Zvcm09J21hdHJpeCgxIDAgMCAtMSAwIDApJyB4bGluazpocmVmPScjYicgLz4KPC9zdmc+Cg==');
+    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+    border-top: 7px solid #d62323;
+}
+.wrapper {
+    width: 90%;
+    margin: 0 5%;
+}
+
+/* ===== Initializr Styles ==================================================
+   Author: Guillaume Mesnard, Gm Créative
+   ========================================================================== */
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* ===================
+    ALL: GmC Theme
+   =================== */
+.container {}
+.header-container {}
+.header-container header {}
+.footer-container {}
+.main aside {}
+.title {
+  float: left;
+}
+.title img {}
+
+/* ==============
+    MOBILE: Menu
+   ============== */
+.menu {
+  float: right;
+  margin: 1em 0;
+  padding: 0;
+  width: 60%;
+}
+.menu ul {
+  /*letter-spacing: -.25em;*/
+  padding: 0;
+  margin: 0;
+}
+.menu li {
+  display: inline;
+}
+.menu li:first-child {
+  display: none;
+}
+.menu a {
+  /*background: rgba(255,255,255,.7);*/
+
+  /*color: #d62323;*/
+  display: inline-block;
+  font-family: Museo;
+  font-size: 1em;
+  letter-spacing: normal;
+  line-height: 1.1em;
+overflow: hidden;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align: top;
+  white-space: normal;
+  width: 100%;
+  z-index: 600;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  /*-webkit-transition: all .2s ease-in;
+     -moz-transition: all .2s ease-in;
+          transition: all .2s ease-in;*/
+}
+.menu a::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: #111;
+border-bottom: 1px solid #d94949;
+  color: #fff;
+  content: attr(data-hover);
+  padding: .5em 1.5em;
+  text-transform: uppercase;
+  -webkit-transition: -webkit-transform 0.3s;
+  -moz-transition: -moz-transform 0.3s;
+  transition: transform 0.3s;
+  -webkit-transform: translateX(-25%);
+  -moz-transform: translateX(-25%);
+  transform: translateX(-25%);
+}
+.menu a:hover::before,
+.menu a:focus::before {
+  -webkit-transform: translateX(0%);
+  -moz-transform: translateX(0%);
+  transform: translateX(0%);
+}
+.menu span {
+  display: block;
+  background: rgba(255,255,255,1);
+  border-bottom: 1px solid #d94949;
+  color: #d62323;
+  padding: .5em 1.5em;
+  -webkit-transition: -webkit-transform 0.3s;
+  -moz-transition: -moz-transform 0.3s;
+  transition: transform 0.3s;
+}
+.menu a:hover span,
+.menu a:focus span {
+-webkit-transform: translateX(100%);
+-moz-transform: translateX(100%);
+transform: translateX(100%);
+}
+.menu .submenu {
+  top: -20px;
+  width: 100%;
+  z-index: 599;
+  left: 0;
+  margin: 0;
+  height: 0;
+  padding: 0;
+  opacity: 0;
+  transition: all .4s ease;
+}
+.menu ul li > a:target + ul {
+  height: auto;
+  top: 3.9em;/*35px;*/
+  opacity: 1;
+}
+.menu .submenu li:first-child {
+  display: block;
+}
+.menu .submenu li {
+  display: block;
+}
+.menu .submenu li a {
+  display: block;
+
+}
+
+.menu .submenu span {
+  background: #d62323;
+  border-bottom: 1px solid #d94949;
+  color: #fff;
+
+}
+
+/* ==============
+    MOBILE: Main
+   ============== */
+
+h1,
+.h1 {
+  font-family: "kaffeesatz";
+  font-size: 2.5em;
+  margin: .5em auto;
+  text-shadow: 1px 1px 0px #fff;
+  text-transform: uppercase;
+}
+h2,
+.h2 {
+  font-size: 2em;
+  font-family: "kaffeesatz";
+  margin: .8em 0 .5em;
+  border-left: 5px solid #d62323;
+  padding-left: .3em;
+  text-shadow: 1px 1px 0px #fff;
+}
+
+h3,
+.h3 {
+  font-size: 1.5em;
+  font-family: kaffeesatz;
+  margin: .5em 0 .2em .5em;
+  padding-left: .5em;
+  position: relative;
+}
+h3::before,
+.h3::before {
+  background: #d62323;
+  content: "";
+  height: 5px;
+  width: 5px;
+  position: absolute;
+  left: 0;
+  top: 45%;
+}
+p {
+  margin: 0 0 1em;
+}
+
+.main {
+    padding: 30px 0;
+}
+
+
+.main aside {
+    background: #dedede;
+    padding: 10px 5% 10px;
+}
+
+.footer-container footer {
+    padding: 20px 0;
+}
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+
+.ie7 .title {
+    padding-top: 20px;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/**
+ * Slideshow
+ */
+.slideshow {
+    background-color: #111111;
+    border-bottom: 12px solid #d62323;
+    border-top: 12px solid #d62323;
+    width: auto;
+    box-shadow: inset 0px 0px 60px rgba(0,0,0,1);
+}
+
+/**
+ * Main
+ */
+.main-container {
+
+}
+
+.main .h2 {
+  border: none;
+}
+
+/**
+ * Services
+ */
+.services {
+  background: #fff;
+  border-top: 12px solid #d62323;
+}
+.services .h1 {
+  border: none;
+  padding-left: 0;
+}
+.services .h2 {
+  border: none;
+  color: #d62323;
+  padding-left: 0;
+}
+.services .h2::before {
+  background: none;
+}
+.service {
+  /*background: #fafafa;
+  border-bottom: 3px solid #d62323;*/
+  display: inline-block;
+  margin-bottom: 1.5em;
+  margin-left: 3%;
+  padding: 0 1%;
+  position: relative;
+  vertical-align: top;
+  width: 30%;
+}
+.service::before {
+  border-top: 20px solid #fff;
+  border-right: 20px solid #fff;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid transparent;
+  content: "";
+  right: 0;
+  position: absolute;
+  top: 0;
+}
+.service:nth-of-type(3n+1) {
+  margin-left: 0;
+}
+.service p {
+  overflow: hidden;
+  margin-bottom: .5em;
+}
+.svg-icon {
+  background: #000;
+  border-radius: 50%;
+  float: left;
+  height: 85px;
+  margin-right: 1em;
+  padding: 10px;
+  width: 85px;
+}
+.service:nth-child(3n) .svg-icon {
+  background: #d62323;
+}
+.service:nth-child(3n+1) .svg-icon {
+  background: #9a9a9a;
+}
+
+/**
+ * Contact
+ */
+.contact {
+    /** To edit this background, follow this link:
+http://svgeneration.com/generate/Border-Triangle?triangle=ffffff&base=d62323&shadow-size=5&inner-shadow=82020a&
+*/background-size:100% auto;background-repeat:no-repeat;
+background-color: #d62323;background-image:url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnICB2aWV3Qm94PScwIDAgMTAwIDEwMCc+Cgk8bGluZWFyR3JhZGllbnQgaWQ9J2cxJyB4MT0nMCUnIHkxPScwJScgeDI9JzEwMCUnIHkyPScwJSc+CgkJPHN0b3Agb2Zmc2V0PScwJScgc3R5bGU9J3N0b3AtY29sb3I6IzgyMDIwYTtzdG9wLW9wYWNpdHk6MScgLz4KCQk8c3RvcCBvZmZzZXQ9JzEwMCUnIHN0eWxlPSdzdG9wLWNvbG9yOiNkNjIzMjM7c3RvcC1vcGFjaXR5OjAnIC8+Cgk8L2xpbmVhckdyYWRpZW50PgoJPGxpbmVhckdyYWRpZW50IGlkPSdnMicgeDE9JzAlJyB5MT0nMCUnIHgyPScwJScgeTI9JzEwMCUnPgoJCTxzdG9wIG9mZnNldD0nMCUnIHN0eWxlPSdzdG9wLWNvbG9yOiM4MjAyMGE7c3RvcC1vcGFjaXR5OjEnIC8+CgkJPHN0b3Agb2Zmc2V0PScxMDAlJyBzdHlsZT0nc3RvcC1jb2xvcjojZDYyMzIzO3N0b3Atb3BhY2l0eTowJyAvPgoJPC9saW5lYXJHcmFkaWVudD4KCTxyYWRpYWxHcmFkaWVudCBpZD0nZzMnIGN4PScwJScgY3k9JzAlJyByPScxMDAlJz4KCQk8c3RvcCBvZmZzZXQ9JzAlJyBzdHlsZT0nc3RvcC1jb2xvcjojODIwMjBhO3N0b3Atb3BhY2l0eToxJyAvPgoJCTxzdG9wIG9mZnNldD0nMTAwJScgc3R5bGU9J3N0b3AtY29sb3I6I2Q2MjMyMztzdG9wLW9wYWNpdHk6MCcgLz4KCTwvcmFkaWFsR3JhZGllbnQ+Cgk8ZyB0cmFuc2Zvcm09J3JvdGF0ZSg0NSkgdHJhbnNsYXRlKDIxLjIgLTQ5LjUpJz4KCQk8cmVjdCB4PSctNTAlJyB5PSctNTAlJyB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPScjZmZmZmZmJyAvPgoJCTxyZWN0IHg9JzUwJScgeT0nLTUwJScgd2lkdGg9JzUlJyBoZWlnaHQ9JzEwMCUnIGZpbGw9J3VybCgjZzEpJyAvPgoJCTxyZWN0IHg9Jy01MCUnIHk9JzUwJScgd2lkdGg9JzEwMCUnIGhlaWdodD0nNSUnIGZpbGw9J3VybCgjZzIpJyAvPgoJPHJlY3QgeD0nNTAlJyB5PSc1MCUnIHdpZHRoPSc1JScgaGVpZ2h0PSc1JScgZmlsbD0ndXJsKCNnMyknIC8+Cgk8L2c+Cjwvc3ZnPg==');
+height: 970px;
+}
+
+.footer-container {
+    background: white;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) {
+
+/* ====================
+    INTERMEDIATE: Menu
+   ==================== */
+
+    /*.menu ul {
+        padding: 1em 0;
+    }
+    .menu a {
+        display: inline-block;
+        padding: .5em 1.5em;
+        margin-bottom: 0;
+    }
+
+    .menu li:first-child a {
+        margin-left: 0;
+    }
+
+    .menu li:last-child a {
+        margin-right: 0;
+    }*/
+
+/* ========================
+    INTERMEDIATE: IE Fixes
+   ======================== */
+
+    .menu li {
+        display: inline;
+    }
+
+    .oldie .menu a {
+        margin: 0 0.7%;
+    }
+
+    .slideshow {
+        /** To edit this background, follow this link:
+        http://svgeneration.com/generate/Overlapping-Thread?size=20&background=111111&left=181818&right=222222&
+        */
+        background-image:url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rJyB3aWR0aD0nMjAnIGhlaWdodD0nMjAnIHZpZXdCb3g9JzAgMCAxMCAxMCc+Cgk8ZyBpZD0nZyc+CgkJPHBhdGggZD0nTTUgNmwtNiAtNiB2LTIgbDYgNicgZmlsbC1vcGFjaXR5PScwJyBzdHJva2U9JyMyMjIyMjInLz4KCQk8cGF0aCBkPSdNNSA1bDYgLTYgdi0yIGwtNiA2JyBmaWxsLW9wYWNpdHk9JzAnIHN0cm9rZT0nIzE4MTgxOCcvPgoJPC9nPgoJPHVzZSB4bGluazpocmVmPScjZycgeT0nLTQnLz4KCTx1c2UgeGxpbms6aHJlZj0nI2cnIHk9JzQnLz4KCTx1c2UgeGxpbms6aHJlZj0nI2cnIHk9JzgnLz4KCTx1c2UgeGxpbms6aHJlZj0nI2cnIHk9JzEyJy8+Cjwvc3ZnPg==');
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+/* ====================
+    WIDE: CSS3 Effects
+   ==================== */
+   .header-container header {
+        padding: 4em 0;
+        height: 220px;
+    }
+
+    .main aside {
+        -webkit-box-shadow: 0 5px 10px #aaa;
+           -moz-box-shadow: 0 5px 10px #aaa;
+                box-shadow: 0 5px 10px #aaa;
+    }
+
+/* ============
+    WIDE: Menu
+   ============ */
+   /**
+     * Annulation des styles mobiles
+     */
+     .menu a::before {
+      background: transparent;
+      position: relative;
+      content: "";
+      height: 0;
+      left: auto;
+      padding: 0;
+      top: auto;
+      width: 0;
+      -webkit-transition: none;
+      -moz-transition: none;
+      transition: none;
+      -webkit-transform: none;
+      -moz-transform: none;
+      transform: none;
+
+    }
+    .menu a:hover::before,
+    .menu a:focus::before {
+      -webkit-transform: none;
+      -moz-transform: none;
+      transform: none;
+    }
+    .menu span {
+      display: inline;
+      background: transparent;
+      border-bottom: none;
+      color: inherit;
+      padding: 0;
+      -webkit-transition: none;
+      -moz-transition: none;
+      transition: none;
+    }
+
+    .menu .submenu {
+      position: absolute;
+      top: 0px;
+      width: 100%;
+      z-index: 599;
+      left: 0;
+      margin: 0;
+      height: 0;
+      padding: 0;
+      opacity: 0;
+      transition: all .4s ease;
+    }
+
+
+   .title {
+    margin: 0;
+    padding: 0;
+   }
+   /*.menu {
+    float: right;
+   }*/
+    .menu {
+      margin-bottom: 0;
+      padding: 1em 0;
+      width: auto;
+    }
+    .menu ul {
+      font-size: 90%;
+
+      margin: 0;
+      min-height: 8em;
+      padding: 0;
+    }
+    .menu li {
+      display: inline-block;
+      position: relative;
+    }
+    .menu li:first-child {
+      display: inline-block;
+    }
+
+    .menu a {
+      display: inline-block;
+      padding: .5em .8em;
+
+      position: relative;
+
+      font-family: Museo;
+      font-size: 1em;
+      line-height: 1.3em;
+      text-align: center;
+      text-decoration: none;
+
+      color: #d62323;
+
+      border-bottom: 0 solid #d62323;
+      z-index: 600;
+      transition: all .2s ease-in;
+    }
+    /**
+     * Hover
+     */
+    .menu a:hover {
+      border-bottom-width: 6px;
+      color: #111;
+    }
+
+    .menu a:hover:before {
+      content: " ";
+      width: 0;
+      height: 0;
+      border-left: .5em solid transparent;
+      border-right: .5em solid transparent;
+      border-bottom: .5em solid #d62323;
+      position: absolute;
+      bottom: 0;
+      left: 45%;
+    }
+    /**
+     * Current
+     */
+    .menu .current a {
+      background: #d62323;
+      border-bottom: 0 solid #fff;
+      color: #fff;
+      box-shadow: inset 0 3px 24px rgba(22,22,22,.75);
+    }
+    .menu .current a:hover {
+        border-bottom-width: 6px;
+    }
+    .menu .current a:before {
+      content: " ";
+      width: 0;
+      height: 0;
+      border-left: .5em solid transparent;
+      border-right: .5em solid transparent;
+      border-bottom: .5em solid #fff;
+      position: absolute;
+      bottom: 0;
+      left: 45%;
+    }
+
+
+      /**
+       * Menu on Mouseover
+       */
+
+      .menu .submenu li > a:hover {
+        border-width: 0 0 4px;
+      }
+      .menu .submenu li > a:hover span {
+        border-bottom-width: 0;
+      }
+      .menu ul li > a:hover + ul,
+      .menu ul li > a:focus + ul,
+      .menu .submenu:hover {
+        height: auto;
+        top: 3.9em;
+        opacity: 1;
+      }
+      .menu .submenu li {
+        border-bottom: 1px solid #e8e8e8;
+        border-top: 1px solid #fff;
+        display: block;
+        width: 100%;
+        line-height: 1.3em;
+        margin: 0;
+        padding: 0;
+      }
+      .menu .submenu a,
+      .menu .submenu a:hover {
+        background: #f4f4f4;
+        border: none;
+        color: #666;
+        display: block;
+        font-size: .9em;
+        padding: .5em 1em;
+      }
+      .menu .submenu a:hover {
+        background: #666;
+        color: #f4f4f4;
+      }
+      .menu .submenu a:hover:before {
+        border-width: 0;
+      }
+      .menu .submenu span {
+        background: transparent;
+        border-bottom: none;
+        color: inherit;
+
+      }
+
+/* ============
+    WIDE: Main
+   ============ */
+
+    .main article {
+      display: inline-block;
+      float: left;
+      width: 68%;
+    }
+
+    .main aside {
+      float: right;
+      width: 28%;
+    }
+}
+
+/* ===============
+    Intermediate Width
+   =============== */
+@media only screen and (min-width: 900px) {
+  .menu a {
+    font-size: 1.1em;
+  }
+  .menu .submenu a,
+  .menu .submenu a:hover {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (min-width: 1140px) {
+
+/* ===============
+    Maximal Width
+   =============== */
+    .menu a {
+      padding: .8em 1.5em;
+    }
+    .menu .submenu a,
+    .menu .submenu a:hover {
+      padding: .8em 1em;
+    }
+    .wrapper {
+      width: 1026px; /* 1140px - 10% for margins */
+      margin: 0 auto;
+    }
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  *text-indent: -9999px;
+}
+
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%;
+}
+
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+      background: transparent !important;
+      color: #000 !important; /* Black prints faster: h5bp.com/s */
+      box-shadow: none !important;
+      text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+      text-decoration: underline;
+    }
+
+    a[href]:after {
+      content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+      content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+      content: "";
+    }
+
+    pre,
+    blockquote {
+      border: 1px solid #999;
+      page-break-inside: avoid;
+    }
+
+    thead {
+      display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+      page-break-inside: avoid;
+    }
+
+    img {
+      max-width: 100% !important;
+    }
+
+    @page {
+      margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+      orphans: 3;
+      widows: 3;
+    }
+
+    h2,
+    h3 {
+      page-break-after: avoid;
+    }
+}
